@@ -144,6 +144,9 @@ p {
   color: #000;
   margin: 16px 0 15px;
 }
+.heading--center {
+  text-align: center;
+}
 .navigation {
   font-size: 22px;
   font-weight: 700;
@@ -431,6 +434,29 @@ a.mouse_scroll:focus {
     background-position: right 70%;
   }
 }
+@media (min-width: 1500px) {
+  .section--bg--gear {
+    background-image: url("../img/bg/gear.png");
+    background-repeat: no-repeat;
+    background-position: left 55%;
+  }
+}
+.section--padding-smaller {
+  padding-top: 30px;
+  padding-bottom: 35px;
+}
+@media (min-width: 768px) {
+  .section--padding-smaller {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .section--padding-smaller {
+    padding-top: 65px;
+    padding-bottom: 67px;
+  }
+}
 .user__photo {
   height: 110px;
   width: 110px;
@@ -509,6 +535,58 @@ a.mouse_scroll:focus {
   margin-right: 5px;
   font-size: 18px;
   color: #FFF;
+}
+.filter {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 19px;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .filter {
+    padding-top: 8px;
+    margin-bottom: 50px;
+  }
+}
+.filter__block {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+.filter__element {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 9px;
+  display: block;
+}
+@media (min-width: 768px) {
+  .filter__element {
+    display: inline-block;
+  }
+}
+@media (min-width: 1200px) {
+  .filter__element {
+    margin-right: 15px;
+  }
+}
+.filter__element:last-child {
+  margin-right: 0;
+}
+.filter__button {
+  display: inline-block;
+  color: #cecece;
+  padding: 12px 31px 15px;
+  cursor: pointer;
+}
+.filter__button:hover {
+  color: #010101;
+}
+.filter__button--active {
+  padding: 10px 29px 13px;
+  border: 2px solid #0052c2;
+  color: #010101;
 }
 .header {
   display: table;

@@ -99,6 +99,9 @@ p {
     line-height: 28px;
   }
 }
+p strong {
+  font-size: 18px;
+}
 .block {
   background: #FFDB4C;
   padding: 20px;

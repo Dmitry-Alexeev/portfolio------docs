@@ -872,6 +872,23 @@ a.mouse_scroll:focus {
 .contact-form__input--half-width:last-of-type {
   margin-right: 0;
 }
+@media (min-width: 1200px) {
+  .contact-form__bg-pencil {
+    position: relative;
+  }
+  .contact-form__bg-pencil:after {
+    position: absolute;
+    left: 75%;
+    top: 75%;
+    display: block;
+    width: 203px;
+    height: 153px;
+    content: "";
+    background-image: url("../img/bg/pencil.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+}
 .header {
   display: table;
   width: 100%;

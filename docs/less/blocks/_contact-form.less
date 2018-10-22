@@ -110,3 +110,27 @@
 		margin-right: 0;
 	}
 }
+
+
+	
+// Выносим псевдоэлемент за класс и позиционируем абсолютно
+@media (min-width: 1200px){	
+
+	.contact-form__bg-pencil {
+		position: relative;
+	}
+
+	.contact-form__bg-pencil:after {
+		position: absolute;
+		left: 75%;
+		top: 75%;
+		display: block;
+		width: 203px;
+		height: 153px;
+		content: "";
+			
+		background-image: url("../img/bg/pencil.png");
+		background-repeat: no-repeat;
+		background-position: left top;
+	}	
+}

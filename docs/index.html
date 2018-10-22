@@ -15,6 +15,10 @@
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
 
+	<!-- Fancybox -->
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css">
+	<!-- <link rel="stylesheet" href="libs/fancybox/helpers/jquery.fancybox-buttons.css"> -->
+
 	<!-- Fonts -->
 	<link rel="stylesheet" href="fonts/noto-webfont/noto.css">
 	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
@@ -200,39 +204,40 @@
 			</div>
 
 			<!-- Фильтр -->
-			<div class="filter">
-				<ul class="filter__block">
-					<li class="filter__element">
-						<span class="filter__button filter__button--active">Все</span>
+			<div class="filter_p">
+				<ul class="filter_p__block">
+					<li class="filter_p__element">
+						<span class="filter_p__button filter_p__button--active filter" data-filter="all">Все</span>
 					</li>
-					<li class="filter__element">
-						<span class="filter__button">html+css</span>
+					<li class="filter_p__element">
+						<span class="filter_p__button filter" data-filter=".html">html+css</span>
 					</li>
-					<li class="filter__element">
-						<span class="filter__button">bootstrap</span>
+					<li class="filter_p__element">
+						<span class="filter_p__button filter" data-filter=".bootstrap">bootstrap</span>
 					</li>
-					<li class="filter__element">
-						<span class="filter__button">учебные</span>
+					<li class="filter_p__element">
+						<span class="filter_p__button filter" data-filter=".tutorial">учебные</span>
 					</li>
-					<li class="filter__element">
-						<span class="filter__button">на заказ</span>
+					<li class="filter_p__element">
+						<span class="filter_p__button filter" data-filter=".payed">на заказ</span>
 					</li>
 				</ul>				
 			</div>
 			<!-- //Фильтр -->
 
 			<!-- Ряд с работами -->
-			<div class="row">
+			<div class="row" id="filter_container">
 
-				<div class="col-sm-4">
+				<!-- project_organica -->
+				<div class="col-sm-4 mix html bootstrap tutorial">
 					<div class="portfolio-item">
-						<a class="portfolio-item__image">
+						<a class="portfolio-item__image fancybox" rel="group" href="usercontent/img/full/organic.jpg" title="Учебный макет Organica">
 							<div class="portfolio-item__image__hover">
 								<i class="fa fa-search" aria-hidden="true"></i>
 								<br>
 								<span>Смотреть макет</span>	
 							</div>
-							<img src="usercontent/img/project_organica.jpg" alt="Органика">	
+							<img src="usercontent/img/project_organica.jpg" alt="Учебный макет Organica">	
 						</a>
 						<div class="portfolio-item__title">
 							<a href="#">Учебный макет Organica</a>
@@ -243,15 +248,16 @@
 					</div>
 				</div>
 
-				<div class="col-sm-4">
+				<!-- project_apollo -->
+				<div class="col-sm-4 mix bootstrap tutorial">
 					<div class="portfolio-item">
-						<a class="portfolio-item__image">
+						<a class="portfolio-item__image fancybox" rel="group" href="usercontent/img/full/apollo.jpg" title="Учебный макет Аполло">
 							<div class="portfolio-item__image__hover">
 								<i class="fa fa-search" aria-hidden="true"></i>
 								<br>
 								<span>Смотреть макет</span>	
 							</div>
-							<img src="usercontent/img/project_apollo.jpg" alt="Органика">	
+							<img src="usercontent/img/project_apollo.jpg" alt="Учебный макет Аполло">	
 						</a>
 						<div class="portfolio-item__title">
 							<a href="#">Учебный макет Аполло</a>
@@ -262,15 +268,16 @@
 					</div>
 				</div>
 
-				<div class="col-sm-4">
+				<!-- project_portfolio -->
+				<div class="col-sm-4 mix bootstrap html tutorial">
 					<div class="portfolio-item">
-						<a class="portfolio-item__image">
+						<a class="portfolio-item__image fancybox" rel="group" href="usercontent/img/full/portfolio.jpg" title="Личный сайт портфолио">
 							<div class="portfolio-item__image__hover">
 								<i class="fa fa-search" aria-hidden="true"></i>
 								<br>
 								<span>Смотреть макет</span>	
 							</div>
-							<img src="usercontent/img/project_portfolio.jpg" alt="Органика">	
+							<img src="usercontent/img/project_portfolio.jpg" alt="Личный сайт портфолио">	
 						</a>
 						<div class="portfolio-item__title">
 							<a href="#">Личный сайт портфолио</a>
@@ -281,15 +288,16 @@
 					</div>
 				</div>
 
-				<div class="col-sm-4">
+				<!-- project_auto -->
+				<div class="col-sm-4 mix html payed">
 					<div class="portfolio-item">
-						<a class="portfolio-item__image">
+						<a class="portfolio-item__image fancybox" rel="group" href="usercontent/img/full/car-concept.jpg" title="Промо сайт автомобиля">
 							<div class="portfolio-item__image__hover">
 								<i class="fa fa-search" aria-hidden="true"></i>
 								<br>
 								<span>Смотреть макет</span>	
 							</div>
-							<img src="usercontent/img/project_auto.jpg" alt="Органика">	
+							<img src="usercontent/img/project_auto.jpg" alt="Промо сайт автомобиля">	
 						</a>
 						<div class="portfolio-item__title">
 							<a href="#">Промо сайт автомобиля</a>
@@ -300,15 +308,16 @@
 					</div>
 				</div>
 
-				<div class="col-sm-4">
+				<!-- project_moto -->
+				<div class="col-sm-4 mix bootstrap payed">
 					<div class="portfolio-item">
-						<a class="portfolio-item__image">
+						<a class="portfolio-item__image fancybox" rel="group" href="usercontent/img/full/motorcycles.jpg" title="Магазин мотоциклов">
 							<div class="portfolio-item__image__hover">
 								<i class="fa fa-search" aria-hidden="true"></i>
 								<br>
 								<span>Смотреть макет</span>	
 							</div>
-							<img src="usercontent/img/project_moto.jpg" alt="Органика">	
+							<img src="usercontent/img/project_moto.jpg" alt="мото">	
 						</a>
 						<div class="portfolio-item__title">
 							<a href="#">Магазин мотоциклов</a>
@@ -318,16 +327,17 @@
 						</div>
 					</div>
 				</div>
-
-				<div class="col-sm-4">
+				
+				<!-- project_music -->
+				<div class="col-sm-4 mix html payed">
 					<div class="portfolio-item">
-						<a class="portfolio-item__image">
+						<a class="portfolio-item__image fancybox" rel="group" href="usercontent/img/full/music.jpg" title="Магазин аудиотехники">
 							<div class="portfolio-item__image__hover">
 								<i class="fa fa-search" aria-hidden="true"></i>
 								<br>
 								<span>Смотреть макет</span>	
 							</div>
-							<img src="usercontent/img/project_music.jpg" alt="Органика">	
+							<img src="usercontent/img/project_music.jpg" alt="аудио">	
 						</a>
 						<div class="portfolio-item__title">
 							<a href="#">Магазин аудиотехники</a>
@@ -351,48 +361,126 @@
 
 
 	<!-- Футер -->
-	<div class="block-bg">
-		<div class="container" id="contacts">
+	<div  id="contacts" class="contacts section section--padding-smaller section--contact--padding-smaller section--bg--cloud">
+		<div class="container">
 			<div class="row">
+
+				<!-- Контакты текст -->
 				<div class="col-sm-6">
 					
-					<div class="block">
+					<div class="heading heading--white">
 						Контакты
 					</div>
 					
+					<div class="contacts__description">
+						<p>
+							Если вы ищите специалиста по верстке сайтов, front-end разработчика в команду или для работы над проектом —  я к вашим услугам.							
+						</p>
+					</div>					
 					
+					<!-- ЕМЭЙЛ АДРЕС ТЕЛЕФОН СКАЙП -->
 					<div class="row">
-						<div class="col-lg-6">
-							<div class="block">
-								E-mail
-							</div>
-							<div class="block">
-								Skype
-							</div>
-						</div>
-						<div class="col-lg-6">
-							<div class="block">
-								Телефон
-							</div>
-							<div class="block">
-								Адрес
-							</div>
-						</div>
-					</div> <!-- //row -->
 
-					
-					<div class="block">
-						Соцсети
+						<!-- емэйл-скайп -->
+						<div class="col-lg-6">
+							<ul class="definition-list">
+								<li class="definition-list__item">
+									<div class="definition-list__def definition-list__def--light definition-list__def--bigger">
+										Email
+									</div>
+									<div class="definition-list__desc">
+										<p><a href="mailto:dmitryironsity@gmail.com">dmitryironsity@gmail.com</a></p>
+									</div>
+								</li>
+
+								<li class="definition-list__item">
+									<div class="definition-list__def definition-list__def--light definition-list__def--bigger">
+										SKYPE
+									</div>
+									<div class="definition-list__desc">
+										<p><a href="skype:dmitryironsity?chat">dmitryironsity</a></p>
+									</div>
+								</li>
+							</ul>
+								
+								
+								
+							
+						</div>
+
+						<!-- телефон-адрес -->
+						<div class="col-lg-6">
+							<ul class="definition-list">
+								<li class="definition-list__item">
+									<div class="definition-list__def definition-list__def--light definition-list__def--bigger">
+										телефон
+									</div>
+									<div class="definition-list__desc">
+										<p><a href="tel:+7 (913) 831-31-75">+7 (913) 831-31-75</a></p>
+									</div>
+								</li>
+
+								<li class="definition-list__item">
+									<div class="definition-list__def definition-list__def--light definition-list__def--bigger">
+										адрес
+									</div>
+									<div class="definition-list__desc">
+										<p>Россия, Красноярск</p>
+									</div>
+								</li>
+							</ul>
+								
+								
+								
+								
+							
+						</div>
 					</div>
+					<!-- //ЕМЭЙЛ АДРЕС ТЕЛЕФОН СКАЙП -->
 					
+					<!-- Социальные сети -->
+					<ul class="definition-list">
+						<li class="definition-list__item">
+							<div class="definition-list__def definition-list__def--light definition-list__def--bigger">
+								Социальные сети
+							</div>
+							<div class="definition-list__desc">
+								<div class="social-icons">
+									<a href="#" class="fa fa-vk" aria-hidden="true"></a>
+									<a href="#" class="fa fa-twitter" aria-hidden="true"></a>
+									<a href="#" class="fa fa-youtube" aria-hidden="true"></a>
+									<a href="#" class="fa fa-instagram" aria-hidden="true"></a>
+									<a href="#" class="fa fa-facebook" aria-hidden="true"></a>
+									<a href="#" class="fa fa-github" aria-hidden="true"></a>
+								</div>
+							</div>
+						</li>								
+					</ul>
+					<!-- //Социальные сети -->
 
 				</div> <!-- //col-lg-6 -->
-
+				
+				<!-- форма -->
 				<div class="col-sm-6">
-					<div class="block">
-						Contact form
+					<div class="heading--medium heading--form heading--padding-top heading--white">
+						Связаться со мной
 					</div>
-				</div> <!-- //col-lg-6 -->
+					<form action="" class="contact-form">
+						<input type="text" class="contact-form__input" name="name" placeholder="Имя">
+						<input type="text" class="contact-form__input" name="email" placeholder="some@mail.com">
+						
+						<!-- Див чтобы работал ластОфТайп -->
+						<div>
+							<input type="text" class="contact-form__input contact-form__input--half-width" name="skype" placeholder="Skype">
+							<input type="text" class="contact-form__input contact-form__input--half-width" name="phone" placeholder="Телефон">
+						</div>
+
+						<textarea class="contact-form__textarea" name="" id="" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
+						<input class="contact-form__submit" type="submit" name="" value="Отправить">
+					</form>
+
+					
+				</div> <!-- //форма -->
 			</div> <!-- //row -->
 		</div> <!-- container -->
 
@@ -400,12 +488,22 @@
 	<!-- //Футер -->
 
 	<!-- Копирайт -->
-	<div class="block-bg-copyright">
+	<div class="copyright">
 		<div class="container">
-			<div class="block">
-			Копирайт
-			</div>
-		</div>
+			<p class="copyright__label">				
+				© 2018 Алексеев Дмитрий
+			</p>
+			<p>				
+				Веб-разработик из Москвы, занимаюсь версткой и созданием сайтов. 
+			</p>
+			<p>
+				Этот сайт сделал в рамках прохождения обучения по верстке на курсах от WebCademy.ru 
+			</p>
+			
+		</div>		
+	</div>
+
+	<div class="block-bg-copyright">
 	</div>
 
 	<!-- //Копирайт -->
@@ -414,6 +512,13 @@
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
 	<script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
+	<script src="libs/mixitup2/jquery.mixitup.min.js"></script>
+
+	<!-- Fancybox -->
+	<script src="libs/fancybox/jquery.fancybox.js"></script>
+	<!-- <script src="libs/fancybox/helpers/jquery.fancybox-buttons.js"></script> -->
+	<script src="libs/jquery/jquery.mousewheel-3.0.6.pack.js"></script>
+
 	
 	<!-- Custom -->
 	<script src="js/main.js"></script>

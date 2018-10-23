@@ -135,6 +135,9 @@ p strong {
 .heading--padding-top {
   padding-top: 7px;
 }
+.heading--bold {
+  font-weight: 700;
+}
 .navigation {
   font-size: 22px;
   font-weight: 700;

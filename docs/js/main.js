@@ -1,16 +1,12 @@
 $(document).ready(function() {
 
-
 	//slide2id - плавная прокрутка по ссылкам внутри страницы
 	$("nav a,a[href='#top'],a[rel='m_PageScroll2id'],a.PageScroll2id").mPageScroll2id({
 	    highlightSelector:"nav a"
 	});
-
-
-
+	
 	// MixItUp - фильтрация работ в портфолио
-	$('#portfolio-projects').mixItUp();
-
+	$('#filter_container').mixItUp();
 
 	// FancyBox - galery
 	$(".fancybox").fancybox({
@@ -23,53 +19,48 @@ $(document).ready(function() {
     });
 	// End of FancyBox - galery
 
-
-	// jQuery Validate JS
-	$("#contact-form").validate({
-		rules: {
-			name: { required: true },
-			email: { required: true, email: true },
-			// skype:  { required: true },
-			// phone:  { required: true },
-			message: { required: true }
+	// Валидация
+	$('#contact-form').validate({
+		//что валидируем
+		rules:{
+			name: { required:true},
+			email: { required:true , email:true},
+			message: { required:true},
 		},
 
+		//сообщения
 		messages: {
 			name: "Пожалуйста, введите свое имя",
 			email: {
-				required: "Пожалуйста, введите свой email",
-				email: "Email адрес должен быть в формате name@domain.com . Возможно вы ввели email с ошибкой."
+				required:"Пожалуйста, введите свой E-mail",
+				email:"Email должен быть в формате name@domain.com. Возможно, вы ввели email с ошибкой",
 			},
-			message: "Пожалуйста, введите текст сообщения"
+			message: "Пожалуйста, введите текст сообщения",
 		},
 
+		//что делаем с формой, когда она провалидирована
 		submitHandler: function(form) {
-		  ajaxFormSubmit();
+			ajaxFormSubmit();
 		}
 
-	})
+	});
 
-	// Функция AJAX запрса на сервер
-	function ajaxFormSubmit(){
-		var string = $("#contact-form").serialize(); // Соханяем данные введенные в форму в строку. 
+	// функция ajax запроса на сервер
+	function ajaxFormSubmit (){
+		var string = $('#contact-form').serialize();
 
-		// Формируем ajax запрос
 		$.ajax({
-			type: "POST", // Тип запроса - POST
-			url: "php/mail.php", // Куда отправляем запрос
-			data: string, // Какие даные отправляем, в данном случае отправляем переменную string
-			
-			// Функция если все прошло успешно
+			type: "POST", //POSTом
+			url: "php/mail.php", // отправляет запрос на рнр
+			data: string, //какие данные отправляем (строчные?)
+
 			success: function(html){
-				$("#contact-form").slideUp(800);
-				$('#answer').html(html);
+				$('#contact-form').slideUp(800); //сворачиваем форму
+				$('#answer').html(html); //показываем ответ
 			}
 		});
 
-		// Чтобы по Submit больше ничего не выполнялось - делаем возврат false чтобы прервать цепчку срабатывания остальных функций
-		return false; 
+		return false;
 	}
 
-
-
-}); 
+});

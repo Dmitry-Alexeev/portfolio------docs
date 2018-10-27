@@ -1,0 +1,832 @@
+
+/* MY MIXINS */
+@import "lib/utils.css";
+
+html, body {
+  margin: 0;
+  padding: 0;
+  color: #222;
+  position: relative;
+  line-height: 1.4;
+  font-size: 18px;
+  font-family: 'Roboto', Sans-Serif;
+  height: 100%;
+  overflow: auto;
+}
+b, strong {
+  font-weight: bold;
+}
+em, i {
+  font-style: italic;
+}
+
+a {
+  color: white;
+  text-decoration: underline;
+  outline: none;
+}
+a:hover,
+a.active {
+  text-decoration: underline;
+  outline: none;
+}
+img,
+a img {
+  border: 0px;
+  outline: none;
+  max-width: 100%;
+  height: auto;
+}
+hr {
+  border-color: #cccccc -moz-use-text-color -moz-use-text-color;
+}
+a {
+  -webkit-transition: all 300ms ease 0s;
+  -moz-transition: all 300ms ease 0s;
+  -ms-transition: all 300ms ease 0s;
+  -o-transition: all 300ms ease 0s;
+  transition: all 300ms ease 0s;
+}
+
+.text_center {
+  text-align: center;
+}
+
+.modal-content {
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+
+.darc_h1{
+    font-family: 'Roboto', Sans-Serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: White;
+    margin-top: 60px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+
+.dark_container{
+    background-image: url(../img/bg_steampunk.jpg);
+    background-color: black;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 60px;
+    color: white;
+    font-family: 'Roboto Light', Sans-Serif;
+    font-size: 16px;
+    height: auto;
+    padding-bottom: 60px;
+}
+
+
+
+
+
+
+
+
+
+/*
+
+##    ##    ###    ##     ## ####  ######      ###    ######## ####  #######  ##    ## 
+###   ##   ## ##   ##     ##  ##  ##    ##    ## ##      ##     ##  ##     ## ###   ## 
+####  ##  ##   ##  ##     ##  ##  ##         ##   ##     ##     ##  ##     ## ####  ## 
+## ## ## ##     ## ##     ##  ##  ##   #### ##     ##    ##     ##  ##     ## ## ## ## 
+##  #### #########  ##   ##   ##  ##    ##  #########    ##     ##  ##     ## ##  #### 
+##   ### ##     ##   ## ##    ##  ##    ##  ##     ##    ##     ##  ##     ## ##   ### 
+##    ## ##     ##    ###    ####  ######   ##     ##    ##    ####  #######  ##    ## 
+
+*/
+.menu_container {
+  background-color: #222222;
+    padding: 20px 0;
+}
+
+.logo{
+    float: left;
+
+}
+
+.callback_btn a{
+    border: 1px white solid;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.menu ul li{
+    display: inline-block;
+    text-decoration: none;
+    float: right;
+    margin-left: 20px;
+    font-size: 17px;
+    font-family: 'Roboto Light', Sans-Serif;
+}
+
+.menu ul li a{
+    text-decoration: none;
+}
+
+.menu ul li a:hover{
+    color: #ffd69e;
+}
+
+.menu ul .callback_btn a:hover{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+
+/*---------------------------------- MAIN SCREEN---------------------------------------*/
+
+.banner_container{
+    margin-top: 20px;
+    color: aliceblue;
+}
+
+.main_banner{
+    height: 355px;
+    background-image: url(../img/main_banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffd69e;
+    position: relative;
+}
+
+.main_form{
+    height: 355px;
+    color: #ffd69e;
+    background-image: url(../img/main_form.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner_h1{
+    width: 350px;
+    padding-top: 30px;
+    margin-left: 50px;
+    font-family: 'Open Sans', Sans-Serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+/*    float: left;*/
+    line-height: 1.2;
+}
+
+.banner_h3{
+    width: 330px;
+    padding-top: 18px;
+    margin-left: 50px;
+    font-family: 'Open Sans Light', Sans-Serif;
+    font-size: 15px;
+    text-transform: none;
+    color: white;
+    line-height: 1.2;
+}
+
+.banner_red{
+    background-color: green;
+}
+
+.banner_img{
+    background-image: url(../img/banner_img_1.png);
+    background-size: cover;
+    height: 355px;
+    width: 355px;
+/*    float: right;*/
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    }
+
+.price_img{
+    background-image: url(../img/Price.png);
+    background-size: cover;
+    height: 167px;
+    width: 167px;
+    position: absolute;
+    right: 270px;
+    bottom: 10px;
+    z-index: 3;
+}
+
+.main_banner .grid_9{
+    height: 105px;
+    background-color: rgba(255, 0, 0, 0.6);
+    position: absolute;
+    bottom: 40px;
+    z-index: 1;
+}
+
+.gift_wrap{
+    width: 200px;
+    text-align: center;
+}
+
+.banner_h10, .banner_h11, .banner_h12, .banner_h13 {
+    color: #ffd69e;
+    opacity: 1;
+    margin-left: 35px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', Sans-Serif;
+}
+
+.banner_h10{
+    font-size: 14px;
+    font-weight: 700;
+    padding-top: 5px;
+}
+
+.banner_h11{
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.banner_h12, .banner_h13{
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: -5px;
+}
+
+/*-------------------------------------------------------------------------*/
+
+.form_action{
+    font-family: 'Roboto Light', Sans-Serif;
+    font-size: 17px;
+    color: white;
+    padding: 25px 0px 0 0px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.form_action span {
+    color: #ffd69e;
+    font-family: 'Roboto', Sans-Serif;
+    font-weight: 700;
+}
+
+.contact_form {
+  color: #FFF;
+  font-size: 18px;
+}
+
+.contact_form input[type=text] {
+  font-family: 'Roboto Light', Sans-Serif;
+  font-size: 14px;
+  height: 35px;
+  color: #A0AFB2;
+  background-color: rgba(255, 0, 0, 0);
+  border: none;
+  width: 77%;
+  border-bottom: 1px #fff solid;
+  margin: 0 15px ;
+    padding-left: 20px;
+
+  -webkit-transition: all 300ms ease 0s;
+  -moz-transition: all 300ms ease 0s;
+  -ms-transition: all 300ms ease 0s;
+  -o-transition: all 300ms ease 0s;
+  transition: all 300ms ease 0s;
+}
+
+.contact_form input[type=text]{
+    margin-top: 10px;
+}
+
+.contact_form input[type=text]:active,
+.contact_form input[type=text]:focus,
+.contact_form input[type=text]:hover {
+  background-color: #fff;
+  color: #555;
+}
+
+.main_form{
+    position: relative;
+}
+
+
+.form_button{
+    width: 190px;
+    background-color: rgba(255, 0, 0, 0.8);
+    font-family: 'Roboto', Sans-Serif;
+    font-weight: 700;
+    font-size: 17px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border: none;
+    margin-top: 20px;
+    margin-left: 15px;
+    color: white;
+    box-sizing: border-box;
+}
+
+.action_final{
+    color: #fff;
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Roboto Light', Sans-Serif;
+    font-size: 14px;
+}
+
+.form_button:hover {
+  background-color: rgba(255, 0, 0, 0);
+  color: white;
+  border: 1px red solid;
+}
+
+.icon_container{
+    margin-top: 60px;
+}
+
+.icon_row_1{
+    background-position: center;
+    height: 70px;
+    width: auto;
+    background-repeat: no-repeat;
+}
+
+.icon1{
+    background-image: url(../img/11_100-original.png);
+}
+
+.icon2{
+    background-image: url(../img/12_Mechanical.png);
+}
+
+.icon3{
+    background-image: url(../img/13_Brutal.png);
+}
+
+.icon4{
+    background-image: url(../img/14_Sapfire.png);
+}
+
+.icon5{
+    background-image: url(../img/15_Kuboc.png);
+}
+
+.icon6{
+    background-image: url(../img/15_Swiss.png);
+}
+
+.icon_1_text_h1{
+    text-align: center;
+    font-family: 'Roboto Light', Sans-Serif;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+/*------------------------------------ SPECIFICATION ----------------------------------*/
+
+.specification{
+    background-image: url(../img/bg_steampunk.jpg);
+    background-color: black;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 60px;
+    color: white;
+    font-family: 'Roboto Light', Sans-Serif;
+    font-size: 16px;
+    height: auto;
+    padding-bottom: 60px;
+}
+
+.specification_h1{
+    font-family: 'Roboto', Sans-Serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: White;
+    margin-top: 60px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.specification .grid_5 .grid_5{
+    border-bottom: 2px rgba(232, 232, 232, 0.3) solid;
+    margin-top: 7px;
+    margin-bottom: 12px;
+}
+
+.specification .grid_7{
+    border-radius: 10px;
+/*    background-image:url(../img/Scecif_video.png);*/
+    height: 400px;
+}
+
+/*--------------------------      PREVIEW       ---------------------------------------*/
+
+
+
+.preview .fancybox{
+    margin-top: 14px;
+}
+
+
+
+/*--------------------------      GIFT       ---------------------------------------*/
+
+.gift_h1{
+    text-align: center;
+    font-family: 'Roboto', Sans-Serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: #151515;
+    margin-top: 35px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.gift_h2{
+    font-size: 24px;
+}
+
+.gift_h3{
+    margin-bottom: 30px;
+}
+
+.gift_btn a{
+    border: 1px white solid;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-family: 'Roboto Light', Sans-Serif;
+    margin-left: 50px;
+    position: absolute;
+}
+
+.gift_btn a:hover{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+
+.gift_img{
+    background-image: url(../img/Gift_Price.png);
+    background-size: cover;
+    height: 167px;
+    width: 167px;
+/*    float: right;*/
+    position: absolute;
+    right: 270px;
+    bottom: 10px;
+    z-index: 3;
+}
+
+.gift_ban_img{
+    background-image: url(../img/2gift_ban_img.png);
+    background-size: cover;
+    height: 303px;
+    width: 365px;
+/*    float: right;*/
+    position: absolute;
+    top: 30px;
+    right: 0;
+    z-index: 2;
+    }
+
+/*--------------------------      DELIVERY       ---------------------------------------*/
+
+.icon_2_h1{
+    text-align: center;
+    font-family: 'Roboto', Sans-Serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: #151515;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.icon_row_21{
+    background-image: url(../img/21_tap.png);
+    background-position: center;
+    height: 100px;
+    width: auto;
+    background-repeat: no-repeat;
+}
+
+.icon_row_22{
+    background-image: url(../img/22_Call.png);
+    background-position: center;
+    height: 100px;
+    width: auto;
+    background-repeat: no-repeat;
+}
+
+.icon_row_23{
+    background-image: url(../img/23_first_class.png);
+    background-position: center;
+    height: 100px;
+    width: auto;
+    background-repeat: no-repeat;
+}
+
+.icon_row_24{
+    background-image: url(../img/24_parcel.png);
+    background-position: center;
+    height: 100px;
+    width: auto;
+    background-repeat: no-repeat;
+}
+
+.icon_2_text_h1{
+    text-align: center;
+    font-family: 'Roboto', Sans-Serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.icon_container .grid_1{
+    height: 20px;
+}
+
+.apostrof{
+    text-align: center;
+}
+
+.icon_2_text_h2{
+    text-align: center;
+    font-family: 'Roboto Light', Sans-Serif;
+    font-size: 14px;
+}
+
+
+/*--------------------------      WHY US       ---------------------------------------*/
+
+
+.why_us_container .container_12{
+/*    background-color: burlywood;*/
+}
+
+.why_us_container{
+    padding-top: 1px;
+}
+
+.row_why{
+    padding: 0 20px;
+}
+
+.row_why_elements{
+    float:left;
+    text-align: center;
+    padding: 0 29px;
+}
+
+.stroke_1{
+    font-family: 'Roboto', Sans-Serif;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.stroke_2{
+    font-family: 'Roboto', Sans-Serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.stroke_3{
+    font-family: 'Roboto Light', Sans-Serif;
+    font-size: 14px;
+}
+
+.element_2{
+    padding: 0 38px;
+}
+
+/*--------------------------      FEEDBACK       ---------------------------------------*/
+
+.feed_h1{
+    text-align: center;
+    font-family: 'Roboto', Sans-Serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: #151515;
+    margin-top: 54px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.feed_border{
+    border: 1px #e5e5e5 solid;
+}
+
+.feed_border .grid_2{
+    height: 220px;
+    width: 140px;
+}
+
+.feed_str_1 a{
+    font-size: 15px;
+    color: blue;
+    font-family: 'Roboto Light', Sans-Serif;
+    font-size: 20px;
+}
+
+.feed_img_1 {
+    background-image: url(../img/feed_1.jpg);
+}
+
+.feed_img_2 {
+    background-image: url(../img/feed_2.jpg);
+}
+
+.feed_img_3 {
+    background-image: url(../img/feed_1.png);
+}
+
+.feed_img_4 {
+    background-image: url(../img/feed_4.jpg);
+}
+
+.feed_str_1{
+    font-family: 'Roboto Light', Sans-Serif;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.feed_str_2{
+    font-family: 'Roboto Light', Sans-Serif;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.feed_str_3{
+    font-family: 'Roboto Thin', Sans-Serif;
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+
+/*--------------------------      ABOUT US       ---------------------------------------*/
+
+
+.about_us_container{
+    padding-top: 1px;
+}
+
+.about_us_h1{
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.about_us_container .grid_6{
+    font-family: 'Roboto', Sans-Serif;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 100;
+    box-sizing: border-box;
+}
+
+.about_us_img_1{
+    background-image: url(../img/about_us_1.png);
+    height: 200px;
+    width: 460px;
+    border: 1px #fff solid;
+}
+
+.row_1{
+    margin-bottom: 40px;
+}
+
+.row_2{
+    margin-top: 10px;
+}
+
+.about_us_img_2{
+    background-image: url(../img/about_us_2.png);
+    height: 200px;
+    width: 460px;
+    border: 1px #fff solid;
+}
+
+/*--------------------------      SERTIFICATES     ---------------------------------------*/
+
+.sert_img_1{
+    background-image: url(../img/sert_img_1.png);
+    height: 210px;
+    width: 140px;
+    border: 3px #ffd69e solid;
+}
+
+.sert_img_2{
+    background-image: url(../img/sert_img_2.png);
+    height: 210px;
+    width: 140px;
+    border: 3px #ffd69e solid;
+}
+
+.sert_img_3{
+    background-image: url(../img/sert_img_3.png);
+    height: 210px;
+    width: 140px;
+    border: 3px #ffd69e solid;
+}
+
+.sert_img_4{
+    background-image: url(../img/sert_img_4.png);
+    height: 210px;
+    width: 140px;
+    border: 3px #ffd69e solid;
+}
+
+/*--------------------------      GIFT QUESTION     ---------------------------------------*/
+
+
+.question_1{
+    background-image: url(../img/question_1.png);
+    height: 344px;
+    width: 460px;
+    border: 1px #fff solid;
+}
+
+/*--------------------------      FOOTER     ---------------------------------------*/
+
+.footer{
+    padding-bottom: 20px;
+}
+
+.footer .row{
+    margin-top: 20px;
+}
+
+.footer_text{
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+/*--------------------------      MODAL WINDOW     ---------------------------------------*/
+
+#myModalLabel{
+    margin-left: 20px;
+    color: white;
+}
+
+.modal-body input[type=text] {
+  font-family: 'Roboto Light', Sans-Serif;
+  font-size: 14px;
+  height: 35px;
+  color: #fff;
+  background-color: rgba(255, 0, 0, 0);
+  border: none;
+  width: 85%;
+  border-bottom: 1px #c1c1c1 solid;
+  margin: 0 20px ;
+  padding-left: 20px;
+
+  -webkit-transition: all 300ms ease 0s;
+  -moz-transition: all 300ms ease 0s;
+  -ms-transition: all 300ms ease 0s;
+  -o-transition: all 300ms ease 0s;
+  transition: all 300ms ease 0s;
+}
+
+.modal-body #email{
+    margin-top: 20px;
+}
+
+.modal-body .form_button{
+    margin-left: 20px;
+    background-color: rgba(255, 0, 0, 0);
+    color: white;
+    font-weight: 400;
+    border: 1px #fff solid;    
+}
+
+.modal-body .form_button:hover{
+    color: #000;
+    background-color: #fff;
+}
+
+.modal-dialog{
+    width: 600px;
+    margin: 100px auto;
+}
+
+.modal-content{
+    background-image: url(../img/VM_steampunk29groot.jpg)
+}
+
+.hidden{
+    display:none;
+}
+
+/*---------------------------Timer------------------------------*/
+
+.timer{
+    margin-top: 10px;
+    font-family: 'Roboto Light', Sans-Serif;
+    font-size: 40px;
+    font-weight: 200;
+}

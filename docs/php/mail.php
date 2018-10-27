@@ -50,5 +50,6 @@ saveUserDataInFile($message);
 
 // header('location: ../thankyou.html');
 echo "<div class='contact-form__success'>Форма отправлена успешно!</div> ";
+// echo "<div class='contact-form__error'>Сбой отправки формы!</div> ";
  
 ?>

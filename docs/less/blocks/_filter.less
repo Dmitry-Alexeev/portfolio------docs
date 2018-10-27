@@ -44,16 +44,28 @@
 	padding: 12px 31px 15px;
 	cursor: pointer;
 	
+	-webkit-transition: color 0.2s ease-in;
+	   -moz-transition: color 0.2s ease-in;
+	    -ms-transition: color 0.2s ease-in;
+	     -o-transition: color 0.2s ease-in;
+	        transition: color 0.2s ease-in;
+	
 	&:hover {
 		color: #010101;		
 	}
 }
 
-.filter_p__button--active {
+// .filter_p__button--active {
+// 	padding: 10px 29px 13px;
+// 	border: 2px solid @blueHeading;
+// 	color: #010101;
+// }
+
+.filter_p__button.filter.active {
 	padding: 10px 29px 13px;
+	color: #000;
 	border: 2px solid @blueHeading;
-	color: #010101;
-}
+} 
 
 #filter_container {
 	text-align: center;

@@ -1,0 +1,60 @@
+.slider {
+	background: #295489;
+	height: 292px;
+	padding-top: 64px;
+	padding-bottom: 75px;
+	background-image: url('../img/bg/slider-bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	box-shadow: 0px 3px 25px 0px rgba(104, 139, 178, 1);
+	position: relative; /* обязательный ли это параметр */
+    
+    @media (min-width: 768px){
+    	height: auto;
+		padding-top: 62px;
+	    padding-bottom: 110px;
+	}   
+    
+    @media (min-width: 1170px){
+		padding-top: 102px;
+	    padding-bottom: 123px;
+	} 
+}
+
+.slider__title {
+	font-size: 28px;
+	line-height: 38px;
+	font-weight: 700;
+	color: #FFF;
+	letter-spacing: 1px;
+	text-align: center; 
+    
+	@media (min-width: 1170px){
+		font-size: 32px;
+		line-height: 42px;
+	}
+}
+
+.slider__slogan {
+	font-family: 'Noto Serif';
+	font-size: 18px;
+	line-height: 26px;
+	color: #ccdfe0;
+	text-align: center;
+	padding-top: 15px;
+	
+    @media (min-width: 768px){
+        padding-top: 3px;
+		font-size: 18px;
+		line-height: 30px;
+	}
+    
+	@media (min-width: 1170px){
+        padding-top: 18px;
+		font-size: 22px;
+		line-height: 32px;
+	}
+}

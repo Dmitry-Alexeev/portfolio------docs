@@ -200,6 +200,11 @@ p strong {
 .navigation a {
   color: #FFF;
   text-decoration: none;
+  -webkit-transition: color 0.1s ease-in;
+  -moz-transition: color 0.1s ease-in;
+  -ms-transition: color 0.1s ease-in;
+  -o-transition: color 0.1s ease-in;
+  transition: color 0.1s ease-in;
 }
 .navigation a:hover,
 .navigation a:focus,
@@ -248,6 +253,9 @@ a.mouse_scroll {
 a.mouse_scroll:active,
 a.mouse_scroll:focus {
   outline: none;
+}
+a.mouse_scroll:hover {
+  color: #ffe400;
 }
 .m_scroll_arrows {
   display: block;
@@ -303,6 +311,9 @@ a.mouse_scroll:focus {
   .mouse {
     display: block;
   }
+}
+.mouse:hover {
+  border-color: #0052c2;
 }
 .wheel {
   height: 5px;
@@ -547,11 +558,30 @@ a.mouse_scroll:focus {
   background-color: #0052c2;
   -webkit-border-radius: 50px;
   border-radius: 50px;
+  -webkit-transition: background-color 0.1s ease-in;
+  -moz-transition: background-color 0.1s ease-in;
+  -ms-transition: background-color 0.1s ease-in;
+  -o-transition: background-color 0.1s ease-in;
+  transition: background-color 0.1s ease-in;
+}
+.button:hover {
+  border: 2px solid #0052c2;
+  padding: 9px 24px 12px;
+  color: #0052c2;
+  background-color: #FFF;
+  cursor: pointer;
+  text-decoration: none;
+}
+.button:active {
+  border: 4px solid #0052c2;
+  padding: 7px 22px 10px;
 }
 .button .fa {
   margin-right: 5px;
   font-size: 18px;
-  color: #FFF;
+}
+.button .fa:hover {
+  color: #0052c2;
 }
 .filter_p {
   font-size: 16px;
@@ -596,14 +626,19 @@ a.mouse_scroll:focus {
   color: #cecece;
   padding: 12px 31px 15px;
   cursor: pointer;
+  -webkit-transition: color 0.2s ease-in;
+  -moz-transition: color 0.2s ease-in;
+  -ms-transition: color 0.2s ease-in;
+  -o-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
 }
 .filter_p__button:hover {
   color: #010101;
 }
-.filter_p__button--active {
+.filter_p__button.filter.active {
   padding: 10px 29px 13px;
+  color: #000;
   border: 2px solid #0052c2;
-  color: #010101;
 }
 #filter_container {
   text-align: center;
@@ -776,6 +811,17 @@ a.mouse_scroll:focus {
 .social-icons .fa:last-child {
   margin-right: 0;
 }
+input,
+textarea {
+  outline: none;
+}
+input:active,
+textarea:active {
+  outline: none;
+}
+textarea:focus {
+  outline: none;
+}
 .contact-form__input {
   color: #00599A;
   font-size: 16px;
@@ -920,6 +966,19 @@ label.error:after {
   -webkit-border-radius: 8px;
   border-radius: 8px;
   color: #43a047;
+  padding: 5px 15px 7px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  margin-top: 2px;
+  font-size: 20px;
+}
+.contact-form__error {
+  background-color: #fff;
+  position: relative;
+  display: block;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  color: #red;
   padding: 5px 15px 7px;
   font-weight: 700;
   margin-bottom: 15px;
@@ -1119,6 +1178,11 @@ label.error:after {
   color: #FFF;
   text-decoration: none;
   border-bottom: 1px dotted #fff;
+  -webkit-transition: color 0.1s ease-in;
+  -moz-transition: color 0.1s ease-in;
+  -ms-transition: color 0.1s ease-in;
+  -o-transition: color 0.1s ease-in;
+  transition: color 0.1s ease-in;
 }
 .contacts a:hover {
   color: #ffe400;
@@ -1146,4 +1210,7 @@ label.error:after {
 }
 .copyright p:last-child {
   margin-bottom: 0;
+}
+.copyright a {
+  text-decoration: underline;
 }

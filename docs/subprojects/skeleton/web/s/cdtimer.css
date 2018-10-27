@@ -1,0 +1,75 @@
+
+.cdtimer {
+    color: #555;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+/*    background-image: url(../i/cdtimer/glow.png);*/
+/*    background-position: top right;*/
+/*    background-repeat: no-repeat;*/
+    font-weight: 200;
+    padding: 0;
+/*    margin: 1em auto;   <-- timer alignment */
+    position: relative;
+    width: 290px;
+    height: 50px;
+
+/*
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+*/
+
+/*    box-shadow: 0px 5px 5px #eee;*/
+    }
+
+/*.cdtimer.default { background-color: #5a125a; }*/
+/*.cdtimer.default { background-color: rgba(255, 0, 0, 0.1); }*/
+
+
+    .cdtimer .clock {
+        position: absolute;
+/*        top: 10px;*/
+        left: 15px;
+        }
+
+        .cdtimer .clock DIV {
+            font-size: 36px;
+            font-weight: 200;
+            color: white;
+/*            line-height: 1em;*/
+            text-align: center;
+/*            border: 1px solid yellow; */
+/*            background: url(../i/cdtimer/sep.png) right 6px no-repeat;*/
+/*            padding-right: 2px;*/
+/*            margin-left: 2px;*/
+            float: left;
+            }
+
+            .cdtimer .clock DIV SPAN {
+                font-size: 10px;
+                font-weight: normal;
+                text-align: center;
+                line-height: 1em;
+                display: block;
+                text-transform: uppercase;
+
+                -moz-opacity: .75;
+                filter: alpha(opacity=75);
+                opacity: .75;
+                }
+
+        .cdtimer .clock DIV.ms {
+            text-align: left;
+            background: none;
+            padding-right: 0;
+            }
+
+    .cdtimer .expired {
+        font-size: 24px;
+        text-align: center;
+        line-height: 150px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        }

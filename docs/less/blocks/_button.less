@@ -7,9 +7,38 @@
 	-webkit-border-radius: 50px;
 	        border-radius: 50px;
 	
+	-webkit-transition: background-color 0.1s ease-in;
+	   -moz-transition: background-color 0.1s ease-in;
+	    -ms-transition: background-color 0.1s ease-in;
+	     -o-transition: background-color 0.1s ease-in;
+	        transition: background-color 0.1s ease-in;
+	
+
+	&:hover{
+		border: 2px solid @blueHeading;
+		padding: 9px 24px 12px;
+		
+		color: @blueHeading;
+		background-color: #FFF;
+		cursor: pointer;
+		text-decoration: none;		
+	}
+
+	&:active{
+		border: 4px solid @blueHeading;
+		padding: 7px 22px 10px;
+	}
+
+
+
+	
 	.fa {
 		margin-right: 5px;
 		font-size: 18px;
-		color: #FFF;
+		
+		&:hover{	
+			color: @blueHeading;
+		}
 	}
+	
 }

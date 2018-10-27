@@ -1,6 +1,12 @@
 .contact-form {
-	
+
 }
+
+input, textarea {outline:none;}
+
+input:active, textarea:active {outline:none;}
+
+textarea:focus {outline:none;}
 
 .contact-form__input {
 	color: #00599A;
@@ -173,6 +179,20 @@ label.error {
 	-webkit-border-radius: 8px;
 	        border-radius: 8px;
 	color: #43a047;
+	padding: 5px 15px 7px;
+	font-weight: 700;
+	margin-bottom: 15px;
+	margin-top: 2px;
+	font-size: 20px;
+}
+
+.contact-form__error {
+	background-color: #fff;
+	position: relative;
+	display: block;
+	-webkit-border-radius: 8px;
+	        border-radius: 8px;
+	color: #red;
 	padding: 5px 15px 7px;
 	font-weight: 700;
 	margin-bottom: 15px;

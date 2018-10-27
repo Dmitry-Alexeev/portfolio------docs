@@ -22,7 +22,14 @@ a.mouse_scroll {
   &:active, &:focus {
   	outline: none;
   }
+
+  &:hover {
+    color: @yellow;
+  }
+
 }
+
+
 .m_scroll_arrows {
   display: block;
   width: 5px;
@@ -38,6 +45,7 @@ a.mouse_scroll {
   width: 16px;
   height: 16px;
 }
+
 .unu {
   margin-top: 1px;
 }
@@ -72,8 +80,13 @@ a.mouse_scroll {
   transform: none;
   border: 2px solid white;
   top: 170px;
+  
   @media (min-width: 768px) {
     display: block;
+  }
+
+  &:hover {
+    border-color: @blueHeading;
   }
 }
 .wheel {

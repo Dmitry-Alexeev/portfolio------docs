@@ -57,7 +57,13 @@ $(document).ready(function() {
 			success: function(html){
 				$('#contact-form').slideUp(800); //сворачиваем форму
 				$('#answer').html(html); //показываем ответ
-			}
+			},
+
+	    	error: function(response) { // Данные не отправлены
+	    		$('#contact-form').slideUp(800); //сворачиваем форму
+	            $('#answer').html('Ошибка. Данные не отправлены :(');
+	            // $('#error').html(html);
+	    	}
 		});
 
 		return false;

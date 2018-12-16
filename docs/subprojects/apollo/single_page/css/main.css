@@ -1,0 +1,239 @@
+/*
+ * Box-sizing-model
+ */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*
+ * Responsive images
+*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*
+ * Cursor change on hover on Buttons
+*/
+input[type="submit"] {
+  cursor: pointer;
+}
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical;
+}
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.clearfix:after {
+  clear: both;
+}
+.clear {
+  clear: both;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+html {
+  font-size: 10px;
+  line-height: 1.4;
+}
+body {
+  font-size: 1.6rem;
+  font-family: 'Open Sans', sans-serif;
+  background-color: white;
+  background-image: url(../img/bg_main.jpg);
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+p {
+  font-size: 14px;
+  line-height: 22px;
+  color: #000;
+}
+@media (min-width: 768px) {
+  p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+p strong {
+  font-size: 18px;
+}
+a:hover {
+  cursor: pointer;
+}
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens - adaptive styles bofore 1200px */
+/* Medium Devices, Desktops - adaptive styles bofore 992px */
+/* Small Devices, Tablets - adaptive styles bofore 768px */
+/* Extra Small Devices, Phones - adaptive styles bofore 480px */
+/* Custom, iPhone Retina - adaptive styles bofore 320px */
+.button {
+  font-size: 16px;
+  display: inline-block;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  border: 2px solid #0052c2;
+  padding: 11px 26px 14px;
+  color: #0052c2;
+  background-color: #FFF;
+  text-decoration: none;
+  -webkit-transition: background-color 0.1s ease-in;
+  -moz-transition: background-color 0.1s ease-in;
+  -ms-transition: background-color 0.1s ease-in;
+  -o-transition: background-color 0.1s ease-in;
+  transition: background-color 0.1s ease-in;
+}
+.button:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #0052c2;
+}
+.button:active {
+  border: 4px solid #0052c2;
+  padding: 7px 22px 10px;
+}
+.glyphicon {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.header__main {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 1;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.header__sub {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.bg_banner {
+  background-color: #fff;
+  background-image: url(../img/bg_banner_sm_700.jpg);
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 100%;
+  margin-bottom: 40px;
+  top: 0;
+}
+@media (min-width: 768px) {
+  .bg_banner {
+    background-image: url(../img/bg_banner_md_1000.jpg);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+@media (min-width: 1200px) {
+  .bg_banner {
+    background-image: url(../img/bg_banner_big_1550.jpg);
+    height: 650px;
+    background-position: top ;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+.content {
+  margin-bottom: 50px;
+}
+.content a {
+  text-decoration: underline;
+}
+.content_header {
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.content_p {
+  font-size: 16px;
+  font-weight: 500;
+}
+li {
+  list-style-type: none;
+  /* Убираем маркеры */
+  font-size: 16px;
+  line-height: 1.85;
+  font-weight: 500;
+}
+.content h4 {
+  font-size: 16px;
+  font-weight: 800;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.flex_box {
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.flex_item_1 {
+  float: left;
+}
+.flex_item_2 {
+  margin: auto;
+}
+.flex_item_3 {
+  float: right;
+}
